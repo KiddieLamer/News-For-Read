@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Desa - News For Read</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="lightModeToggle" class="light-mode-toggle">
+        <i class="fas fa-wifi"></i> Mode Ringan
+    </div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1><i class="fas fa-newspaper"></i> Portal Desa</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li><a href="#informasi" class="nav-link">Informasi Praktis</a></li>
+                    <li><a href="#lapor" class="nav-link">Lapor</a></li>
+                    <li><a href="#umkm" class="nav-link">UMKM Desa</a></li>
+                    <li><a href="#forum" class="nav-link">Forum Diskusi</a></li>
+                    <li><a href="#siaran" class="nav-link">Siaran Langsung</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="beranda" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Selamat Datang di Portal Desa</h1>
+                    <p>Pusat informasi terpadu untuk seluruh warga desa. Akses informasi praktis, laporkan keluhan, dan tetap terhubung dengan komunitas Anda.</p>
+                    <div class="hero-buttons">
+                        <a href="#informasi" class="btn btn-primary">Lihat Informasi</a>
+                        <a href="#lapor" class="btn btn-secondary">Laporkan Masalah</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="informasi" class="info-section">
+            <div class="container">
+                <h2><i class="fas fa-info-circle"></i> Informasi Praktis</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>Jadwal Posyandu</h3>
+                        </div>
+                        <div class="info-content">
+                            <p><strong>Posyandu Melati:</strong> Setiap Minggu ke-2, pukul 08:00 WIB</p>
+                            <p><strong>Posyandu Mawar:</strong> Setiap Minggu ke-4, pukul 09:00 WIB</p>
+                            <p><strong>Lokasi:</strong> Balai RW 02</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-seedling"></i>
+                            <h3>Harga Komoditas</h3>
+                        </div>
+                        <div class="info-content">
+                            <div class="price-item">
+                                <span>Beras</span>
+                                <span>Rp 12.000/kg</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Cabai</span>
+                                <span>Rp 35.000/kg</span>
+                            </div>
+                            <div class="price-item">
+                                <span>Jagung</span>
+                                <span>Rp 8.500/kg</span>
+                            </div>
+                            <small>Update terakhir: 6 September 2025</small>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-phone"></i>
+                            <h3>Kontak Darurat</h3>
+                        </div>
+                        <div class="info-content">
+                            <div class="contact-item">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <strong>Kepala Desa</strong>
+                                    <p>08123456789</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-user-nurse"></i>
+                                <div>
+                                    <strong>Bidan Desa</strong>
+                                    <p>08198765432</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <strong>Polsek Terdekat</strong>
+                                    <p>08111222333</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lapor" class="report-section">
+            <div class="container">
+                <h2><i class="fas fa-exclamation-triangle"></i> Laporkan Masalah</h2>
+                <div class="report-form-container">
+                    <form id="reportForm" class="report-form">
+                        <div class="form-group">
+                            <label for="reportTitle">Judul Laporan</label>
+                            <input type="text" id="reportTitle" name="title" required placeholder="Contoh: Jalan Rusak di RT 03">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reportCategory">Kategori</label>
+                            <select id="reportCategory" name="category" required>
+                                <option value="">Pilih Kategori</option>
+                                <option value="infrastruktur">Infrastruktur</option>
+                                <option value="kebersihan">Kebersihan</option>
+                                <option value="keamanan">Keamanan</option>
+                                <option value="kesehatan">Kesehatan</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reportDescription">Deskripsi Masalah</label>
+                            <textarea id="reportDescription" name="description" required placeholder="Jelaskan masalah secara detail..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reportPhoto">Foto Pendukung</label>
+                            <input type="file" id="reportPhoto" name="photo" accept="image/*" multiple>
+                            <small>Maksimal 3 foto, ukuran masing-masing maksimal 2MB</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reportLocation">Lokasi (Opsional)</label>
+                            <input type="text" id="reportLocation" name="location" placeholder="RT/RW atau alamat spesifik">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Kirim Laporan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="umkm" class="umkm-section">
+            <div class="container">
+                <h2><i class="fas fa-store"></i> UMKM Desa</h2>
+                <div class="umkm-grid">
+                    <div class="umkm-card">
+                        <div class="umkm-image">
+                            <img src="https://via.placeholder.com/300x200?text=Warung+Bu+Siti" alt="Warung Bu Siti">
+                        </div>
+                        <div class="umkm-content">
+                            <h3>Warung Bu Siti</h3>
+                            <p>Menyediakan makanan tradisional dan jajanan khas desa. Buka setiap hari 06:00 - 21:00</p>
+                            <div class="umkm-contact">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>08123456789</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="umkm-card">
+                        <div class="umkm-image">
+                            <img src="https://via.placeholder.com/300x200?text=Kerajinan+Bambu" alt="Kerajinan Bambu">
+                        </div>
+                        <div class="umkm-content">
+                            <h3>Kerajinan Bambu Pak Joko</h3>
+                            <p>Produksi berbagai kerajinan bambu seperti anyaman, furniture, dan souvenir unik.</p>
+                            <div class="umkm-contact">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>08198765432</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="umkm-card">
+                        <div class="umkm-image">
+                            <img src="https://via.placeholder.com/300x200?text=Tani+Organik" alt="Tani Organik">
+                        </div>
+                        <div class="umkm-content">
+                            <h3>Sayuran Organik Bu Ani</h3>
+                            <p>Sayuran segar hasil kebun organik tanpa pestisik. Tersedia sistem antar untuk wilayah desa.</p>
+                            <div class="umkm-contact">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>08111222333</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-umkm">
+                    <h3>Daftarkan UMKM Anda</h3>
+                    <p>Ingin menampilkan usaha Anda di portal ini? Hubungi admin desa untuk pendaftaran.</p>
+                    <button class="btn btn-secondary" onclick="window.open('https://wa.me/08123456789?text=Halo, saya ingin mendaftarkan UMKM saya', '_blank')">
+                        <i class="fab fa-whatsapp"></i> Hubungi Admin
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="forum" class="forum-section">
+            <div class="container">
+                <h2><i class="fas fa-comments"></i> Forum Diskusi</h2>
+                <div class="forum-topics">
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h3><i class="fas fa-seedling"></i> Diskusi Pertanian</h3>
+                            <span class="topic-stats">24 anggota</span>
+                        </div>
+                        <p>Berbagi tips dan pengalaman seputar pertanian, perkebunan, dan peternakan</p>
+                        <button class="btn btn-outline">Bergabung</button>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h3><i class="fas fa-users"></i> PKK dan Kegiatan Ibu</h3>
+                            <span class="topic-stats">18 anggota</span>
+                        </div>
+                        <p>Forum diskusi untuk kegiatan PKK, resep masakan, dan kegiatan pemberdayaan perempuan</p>
+                        <button class="btn btn-outline">Bergabung</button>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <h3><i class="fas fa-hammer"></i> Gotong Royong</h3>
+                            <span class="topic-stats">35 anggota</span>
+                        </div>
+                        <p>Koordinasi kegiatan gotong royong, kerja bakti, dan pembangunan desa</p>
+                        <button class="btn btn-outline">Bergabung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="siaran" class="broadcast-section">
+            <div class="container">
+                <h2><i class="fas fa-broadcast-tower"></i> Siaran Langsung</h2>
+                <div class="broadcast-container">
+                    <div class="broadcast-status offline">
+                        <i class="fas fa-circle"></i>
+                        <span>Tidak ada siaran aktif</span>
+                    </div>
+                    
+                    <div class="next-broadcast">
+                        <h3>Jadwal Siaran Berikutnya:</h3>
+                        <div class="broadcast-schedule">
+                            <div class="schedule-item">
+                                <div class="schedule-date">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>15 September 2025</span>
+                                </div>
+                                <div class="schedule-event">
+                                    <h4>Musyawarah Desa</h4>
+                                    <p>Pembahasan program kerja tahun 2025 dan anggaran desa</p>
+                                    <span class="schedule-time">19:30 WIB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="broadcast-notification">
+                        <h4>Dapatkan Notifikasi</h4>
+                        <p>Aktifkan notifikasi untuk mendapat pemberitahuan siaran langsung penting</p>
+                        <button class="btn btn-primary" id="notificationBtn">
+                            <i class="fas fa-bell"></i> Aktifkan Notifikasi
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portal Desa</h3>
+                    <p>Menghubungkan warga desa dengan informasi dan layanan yang dibutuhkan.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Kantor Desa, RT 01 RW 01</p>
+                    <p><i class="fas fa-phone"></i> (0274) 123-456</p>
+                    <p><i class="fas fa-envelope"></i> admin@portaldesa.id</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Portal Desa. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

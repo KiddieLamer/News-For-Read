@@ -1,0 +1,73 @@
+Langkah 1: Identifikasi Role/Pengguna (As a...)
+
+Siapa saja yang akan menggunakan portal ini? Contoh:
+
+Warga Desa (bisa dibagi lagi: Warga Biasa, Petani, Ibu Rumah Tangga, Perangkat Desa)
+Kepala Desa / Perangkat Desa
+Admin (orang yang mengelola konten)
+Warga Perantau (target penting!)
+Langkah 2: Tulis User Stories-nya
+
+Berikut contoh konversi dari fitur-fitur yang kita diskusikan sebelumnya menjadi User Stories:
+
+Epic: Informasi Praktis
+
+Sebagai seorang warga desa,
+Saya ingin melihat jadwal posyandu dan puskesmas keliling,
+Agar saya tidak melewatkan jadwal untuk memeriksakan anak saya.
+Sebagai seorang petani,
+Saya ingin mengetahui harga terkini komoditas pertanian di pasar terdekat,
+Agar saya bisa menjual hasil panen saya dengan harga yang fair.
+Sebagai seorang warga,
+Saya ingin dengan mudah menemukan nomor telepon penting (Kades, bidan, polisi),
+Agar saya dapat menghubungi mereka dengan cepat dalam keadaan darurat.
+Epic: Partisipasi dan Lapor Warga
+
+Sebagai seorang warga,
+Saya ingin dapat melaporkan kerusakan jalan di dekat rumah saya beserta foto,
+Agar perangkat desa dapat menindaklanjuti dan memperbaikinya.
+Sebagai perangkat desa,
+Saya ingin mendapatkan notifikasi ketika ada laporan baru dari warga,
+Agar saya dapat merespons dengan cepat.
+Sebagai seorang warga yang aktif,
+Saya ingin bisa berdiskusi dengan warga lain di forum seputar topik tertentu (e.g., pertanian, PKK),
+Agar saya bisa bertukar pikiran dan memecahkan masalah bersama.
+Epic: Aksesibilitas (Sinyal Lemah)
+
+Sebagai seorang warga dengan kuota internet terbatas,
+Saya ingin bisa mengaktifkan "mode ringan" yang mematikan gambar,
+Agar saya bisa mengakses berita tanpa menghabiskan banyak kuota.
+Sebagai seorang warga yang sering berada di area tanpa sinyal,
+Saya ingin bisa mendownload (mengunduh) berita penting ketika ada sinyal,
+Agar saya bisa membacanya nanti di rumah tanpa koneksi internet.
+Epic: Siaran dan Keterlibatan
+
+Sebagai seorang warga perantau,
+Saya ingin bisa menonton siaran langsung musyawarah desa,
+Agar saya tetap merasa terhubung dan update dengan perkembangan kampung halaman.
+Sebagai admin desa,
+Saya ingin bisa dengan mudah melakukan siaran langsung langsung dari smartphone saya,
+Agar saya bisa menyiarkan acara darurat atau acara tidak terduga tanpa persiapan rumit.
+Epic: Ekonomi Desa
+
+Sebagai pemilik usaha kecil (UMKM) di desa,
+Saya ingin bisa memasarkan produk saya (dengan foto dan nomor WA) di portal,
+Agar jangkauan penjualan saya lebih luas.
+Langkah Selanjutnya setelah punya User Stories:
+
+Prioritisasi: Tidak semua fitur bisa dibuat sekaligus. Prioritaskan berdasarkan nilai manfaat vs kerumitan. Gunakan Prioritization Matrix sederhana.
+
+High Value, Low Effort (Quick Wins): Lakukan pertama! Contoh: Fitur Info Praktis (jadwal, nomor telpon), Mode Ringan.
+High Value, High Effort: Rencanakan untuk jangka menengah. Contoh: Fitur Lapor, Forum Diskusi.
+Low Value, Low Effort: Bisa dilakukan kalau ada waktu senggang.
+Low Value, High Effort: Hindari dulu atau pertimbangkan ulang.
+Acceptance Criteria (AC): Untuk setiap User Story yang diprioritaskan, definisikan kriteria agar sebuah fitur bisa dinyatakan "SELESAI".
+
+Contoh untuk Story "Melapor":
+
+AC 1: Pengguna dapat mengklik tombol "Lapor" di halaman utama.
+AC 2: Pengguna dapat menulis judul dan deskripsi laporan.
+AC 3: Pengguna dapat mengunggah minimal satu foto.
+AC 4: Pengguna mendapat notifikasi "Laporan Anda telah diterima".
+AC 5: Admin dapat melihat laporan tersebut di dashboard admin.
+Wireframing / Sketching: Gambar kasar (bisa di kertas atau tools digital) tampilan layarnya. How might it look? Ini membantu memvisualisasikan user story.
